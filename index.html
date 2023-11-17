@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="recharge.css">
+ </head>
+<body>
+    <main id="main">
+        <label for="">Network Provider</label>
+        <select name="" id="network">
+            <option value="">--Choose network--</option>
+            <option value="MTN">MTN</option>
+            <option value="GLO">Glo</option>
+            <option value="AIRTEL">Airtel</option>
+            <option value="9MOBILE">9mobile</option>
+        </select>
+        <section id="section">
+        <label for="">Amount</label>
+        <select name="" id="amount">
+            <option value="100">100</option>
+            <option value="200">200</option>
+            <option value="500">500</option>
+            <option value="1000">1000</option>
+        </select>
+
+        <button onclick="genPin()">Generate Pin</button>
+        <h1 id="thisPin"></h1>
+
+        <h1>Recharge Airtime</h1>
+        <input type="text" id="LoadAirtime" value="*311*pin#">
+        <button onclick="LoadAirtimeCard()">Recharge</button>
+        <p>Recharge airtime using universal code *311*pin#</p>
+        <h4 >Balance: <span id="balance"> </span> </h4>
+    </section>
+
+         <div id="image"> </div>
+    </main>
+</body>
+</html>
+<script src="recharge.js"></script>
+
